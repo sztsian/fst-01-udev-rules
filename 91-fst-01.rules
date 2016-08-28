@@ -1,0 +1,6 @@
+SUBSYSTEM!="usb", GOTO="fst-01_rules_end"
+ACTION!="add", GOTO="fst-01_rules_end"
+
+ATTRS{idVendor}=="234b", ATTRS{idProduct}=="0000", TAG+="udev-acl", TAG+="uaccess"
+
+LABEL="fst-01_rules_end"
